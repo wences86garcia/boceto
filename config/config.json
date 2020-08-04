@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "wences86",
+    "password": "CaballoTroya",
+    "database": "cambalache",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306"
+  },
+  "test": {
+    "username": "wences86",
+    "password": "CaballoTroya",
+    "database": "cambalache",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306"
+  },
+  "production": {
+    "username": "wences86",
+    "password": "CaballoTroya",
+    "database": "cambalache",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306"
+  }
+}

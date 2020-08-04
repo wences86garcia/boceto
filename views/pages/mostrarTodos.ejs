@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todos nuestros libros</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' >
+    </head>
+    <body>
+        <%- include('../partials/nav.ejs'); -%>
+        <h1>Todos nuestros libros</h1>
+
+        <ul class="listado">
+            <% libros.forEach((n) => { %>
+                <li class="lista-item">
+                    <a href="database/libro/<%= n.id %>" class="listado-link">
+                        <%= n.titulo %>
+                        <img src="<%= n.cover %>" alt="">
+                    </a>
+                </li>
+            <% }) %>
+        </ul>
+        
+    </body>
+</html>

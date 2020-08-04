@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+    </head>
+  <body>
+    <div id="contein">
+      <div class="cabecera">
+    <div class="logo" >
+        <img src="img/logo.jpg" alt="imagen de logo">
+    </div>
+        <button id="boton" class="boton">Menú</button>
+        <%- include('./partials/nav.ejs'); -%>
+        <script src="burger.js"></script>
+    </div> <!--cierre cabecera-->
+    <div id="main" class="top">
+        <img class="card-img" src="images/libros3.jpg" alt="imagen libros">
+      <div class="topinfo">
+        <h1>Queremos conocer tus ideas y textos</h1>  
+        <p>Descubrí el sitio donde tus notas, cuentos y narraciones tienen
+            valor</p>
+        <a href="/registro">Registrate</a>    
+      </div> <!--cierra topinfo-->
+    </div><!--cierra top-->
+    <div class="butoom">
+
+        <div class="caja1">
+            <img class="card1-img" src="images/nota2.jpg" alt="imagen de notas">
+        
+        <div class="caja1-info">
+            <h3>Notas</h3>
+            <hr class="linea1">
+            <p>Accedé a Notas creando un Usuario.
+                Subí tus textos, ya sean pequeños cuentos, narraciones, 
+                anécdotas, cartas, etc. Vas a poder hacer y recibir críticas constructivas de 
+                otros usuarios, que te van a ayudar a formarte como escritor.
+            </p>
+        </div>
+        </div><!--cierra caja1-->
+        <div class="caja2">
+            <img class="card2-img" src="images/libros.jpg" alt="imagen de libros personal">
+            <div class="caja2-info">
+            <h3>Mi Librero</h3>
+            <hr class="linea2">
+            <p>Accedé a Mi Librero creando un Usuario.
+                Compartí con otros usuarios tu libros favoritos y 
+                los autores que más te gusten.
+            </p>
+            </div>
+        </div><!--cierra caja2-->
+        <div class="caja3">
+            <img class="card3-img" src="images/mano2.jpg" alt="imagen de Trueque">
+            <div class="caja3-info">
+            <h3>Trueque</h3>
+            <hr class="linea3">
+            <p>Accedé a Trueque creando un Usuario.
+                Conectate con otros usuarios para cambiar libros usados o nuevos.
+                
+            </p>
+            </div>
+        </div><!--cierra caja3-->
+    </div><!--cierra buttom-->
+  </div><!--cierra contein-->
+
+
+
+    <%- include('./partials/footer.ejs') -%>
+  </body>
+</html>

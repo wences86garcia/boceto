@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' >
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+    </head>
+<body>
+    <%- include('../partials/nav.ejs') -%>
+    <h1><%= title %></h1>
+    
+    <h2>Complete formulario</h2>
+    <div class="top">
+        <img class="card-img" src="images/mesa.jpg" alt="imagen libros">
+      <div class="topinfo">
+        <h1>Ingresá tus datos</h1>   
+      </div> <!--cierra topinfo-->
+    </div><!--cierra top-->
+    <div class="caja-form">
+        <form action="procesador.js">
+        <label>
+            Nombre:
+            <input type="text" placeholder="Ingrese su nombre" required>
+        </label>
+        <br>
+        
+        <label>
+            E-mail:
+            <input type="E-mail" placeholder="Ingrese su E-mail" required>
+        </label>
+        <br>
+        
+        <label>
+            Fecha de Nacimiento:
+            <input type="date">
+        </label>
+        <br>
+        <label>País</label>
+        <input type="text" list="paises">
+        <datalist id="paises">
+            <option>Argentina</option>
+            <option>Venezuela</option>
+            <option>Colombia</option>
+            <option>Uruguay</option>
+            <option>Peru</option>
+            <option>Bolivia</option>
+            <option>Brasil</option>
+            <option>Chile</option>
+            <option>Mexico</option>
+            <option>Panama</option>
+            <option>Cuba</option>
+            <option>Paraguay</option>
+        </datalist>
+        <br>
+
+        <label>Provincia:</label>
+        <select>
+            <option>Buenos Aires</option>
+            <option>C.A.B.A.</option>
+            <option>La Rioja</option>
+            <option>Santiago del Estero</option>
+            <option>Tucuman</option>
+            <option>Salta</option>
+            <option>Jujuy</option>
+            <option>La Pampa</option>
+            <option>Formosa</option>
+            <option>Catamarca</option>
+            <option>Cordoba</option>
+            <option>Mendoza</option>
+            <option>Chaco</option>
+            <option>Entre Rios</option>
+            <option>Santa Fe</option>
+            <option>San Juan</option>
+            <option>San Luis</option>
+            <option>Misiones</option>
+            <option>Chubut</option>
+            <option>Neuquen</option>
+            <option>Santa Cruz</option>
+            <option>Rio Negro</option>
+            <option>Tierra del Fuego</option>
+        </select>
+        <br>
+        
+        
+        <label>
+            Contraseña:
+            <input type="password">
+        </label>
+        <br>
+        
+        <label>
+            Repetí la Contraseña:
+            <input type="password">
+        </label>
+        <br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+    </form>
+
+    </div><!--cierro caja-form-->
+
+
+    
+    <%- include('../partials/footer.ejs') -%>
+</body>
+</html>
